@@ -1,7 +1,8 @@
 resource "aws_instance" "web1" {
   ami           = "ami-02f706d959cedf892"
   instance_type = "t2.micro"
-  key_name      = "terraform_april"
+  key_name      = "${aws_key_pair.terraform_april}"
+  security_groups = [${aws_security_group.sec1.id}]
 
 
 
