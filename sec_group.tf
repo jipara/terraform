@@ -26,4 +26,4 @@ resource "aws_security_group" "sec-1" {
     Created_by = "Jipara"
   }
 }
-}
+
