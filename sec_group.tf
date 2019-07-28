@@ -12,5 +12,3 @@ resource "aws_security_group" "sec-1" {
     # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
     cidr_blocks = ["0.0.0.0/0"]
   }
-
-  
