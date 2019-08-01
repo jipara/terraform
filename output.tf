@@ -3,5 +3,5 @@ output "key_name" {
 }
 
 output "bucketname" {
-  value = "${aws_s3_bucket.b.bucket"
+  value = "${aws_s3_bucket.b.bucket}"
 }
