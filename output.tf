@@ -1,7 +1,7 @@
 output "key_name" {
-  value = "${file("~/.ssh/id_rsa.pub")}"
+  value = "${aws_key_pair.terraform_april.key_name}"
 }
 
 output "bucketname" {
-  value = "my-tf-test-bucket-jipara"
+  value = "${aws_s3_bucket.b}"
 }
